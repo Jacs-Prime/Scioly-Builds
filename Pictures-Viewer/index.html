@@ -60,6 +60,7 @@
         <li class="item" data-scene="harris_L07_1" onclick="loadScene('harris_L07_1');pan(harris_107_1)">Harris L07</li>
       </ul>
     </li>
+    <li class="item" data-scene="jacobs_center_1" onclick="loadScene('jacobs_center_1');pan(jacobs_center_1)">2001 Sheridan (Jacobs Center) Atrium</li> 
     <li class="item" data-scene="kresge_kaplan_1" onclick="loadScene('kresge_kaplan_1');pan(kresge_kaplan_1)">Kresge Alice Kaplan Institute Lounge</li> 
     <li class="item" data-scene="lutkin_hall_1" onclick="loadScene('lutkin_hall_1');pan(lutkin_hall_1)">Lutkin Hall</li>
     <li class="item" data-scene="norris_louis_1" onclick="loadScene('norris_louis_1');pan(norris_louis_1)">Norris Louis Room</li> 
@@ -102,6 +103,7 @@ var tech_willens_atrium_1 = L.marker([42.058271, -87.675865]).addTo(map); tech_w
 
 var fisk_217_1 = L.marker([42.050842, -87.674141]).addTo(map); fisk_217_1.bindPopup("<b>Fisk 217</b>");
 var harris_107_1 = L.marker([42.051256, -87.676180]).addTo(map); harris_107_1.bindPopup("<b>Harris Hall</b>");
+var jacobs_center_1 = L.marker([42.054137, -87.676357]).addTo(map); jacobs_center_1.bindPopup("<b>2001 Sheridan Atrium</b>");  
 var kresge_kaplan_1 = L.marker([42.051609, -87.675061]).addTo(map); kresge_kaplan_1.bindPopup("<b>Kaplan Lounge</b>");
 var lutkin_hall_1 = L.marker([42.051023, -87.680249]).addTo(map); lutkin_hall_1.bindPopup("<b>Lutkin Hall</b>");
 var norris_louis_1 = L.marker([42.053409, -87.672572]).addTo(map); norris_louis_1.bindPopup("<b>Louis Room</b>");
@@ -121,6 +123,10 @@ const viewer = pannellum.viewer('viewer', {
   },
 
   scenes: {
+    jacobs_center_1: {
+      panorama: 'scenes/jacobs_center_1.jpg',
+      autoLoad: true
+    },
     norris_louis_1: {
       panorama: 'scenes/norris_louis_1.jpg',
       autoLoad: true,
