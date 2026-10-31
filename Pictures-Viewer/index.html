@@ -55,6 +55,13 @@
   <ul>
     <li class="item" data-scene="alice_millar_1" onclick="loadScene('alice_millar_1');pan(alice_millar_1)">Alice Millar Chapel</li> 
     <li class="item" onclick="loadScene('fisk_217_1');pan(fisk_217_1)">Fisk Hall 217</li> 
+    <li class="folder">Ford
+      <ul>
+        <li class="item" data-scene="ford_hive_1" onclick="loadScene('ford_hive_1');pan(ford_hive_1)">Ford Hive</li>
+        <li class="item" data-scene="ford_hive_annex_1" onclick="loadScene('ford_hive_annex_1');pan(ford_hive_1)">Ford Hive Annex</li>
+        <li class="item" data-scene="ford_1st_ds_1" onclick="loadScene('ford_1st_ds_1');pan(ford_hive_1)">Ford Design Studio 1</li>
+      </ul>
+    </li>
     <li class="folder">Harris Hall
       <ul>
         <li class="item" data-scene="harris_107_1" onclick="loadScene('harris_107_1');pan(harris_107_1)">Harris 107</li>
@@ -104,6 +111,7 @@ var tech_willens_atrium_1 = L.marker([42.058271, -87.675865]).addTo(map); tech_w
 
 var alice_millar_1 = L.marker([42.050496, -87.677156]).addTo(map); alice_millar_1.bindPopup("<b>Alice Millar Chapel</b>");
 var fisk_217_1 = L.marker([42.050842, -87.674141]).addTo(map); fisk_217_1.bindPopup("<b>Fisk 217</b>");
+var ford_hive_1 = L.marker([42.056927, -87.676546]).addTo(map); ford_hive_1.bindPopup("<b>Ford Design Center</b>");
 var harris_107_1 = L.marker([42.051256, -87.676180]).addTo(map); harris_107_1.bindPopup("<b>Harris Hall</b>");
 var jacobs_atrium_1 = L.marker([42.054137, -87.676357]).addTo(map); jacobs_atrium_1.bindPopup("<b>2001 Sheridan Atrium</b>");  
 var kresge_kaplan_1 = L.marker([42.051609, -87.675061]).addTo(map); kresge_kaplan_1.bindPopup("<b>Kaplan Lounge</b>");
@@ -127,6 +135,18 @@ const viewer = pannellum.viewer('viewer', {
   scenes: {
     jacobs_atrium_1: {
       panorama: 'scenes/jacobs_atrium_1.jpg',
+      autoLoad: true,
+    },
+    ford_hive_1: {
+      panorama: 'scenes/ford_hive_1.jpg',
+      autoLoad: true,
+    },
+    ford_hive_annex_1: {
+      panorama: 'scenes/ford_hive_annex_1.jpg',
+      autoLoad: true,
+    },
+    ford_1st_ds_1: {
+      panorama: 'scenes/ford_1st_ds_1.jpg',
       autoLoad: true,
     },
     norris_louis_1: {
